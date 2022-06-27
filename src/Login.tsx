@@ -21,7 +21,6 @@ export const Login = () => (
       <div className="field">
           <div className="fiel">
             <span>Password</span>
-            {/* <p>Forgot password?</p> */}
           </div>
         <input type="password" name="" id="" placeholder="Password" />
       </div>
