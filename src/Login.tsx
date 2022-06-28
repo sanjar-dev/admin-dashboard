@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactComponent as Logo } from "./logo.svg";
+import { ReactComponent as VisibilityToggle } from "./icons/active.svg";
 
 export const Login = () => (
   <div className="login">
@@ -13,16 +14,22 @@ export const Login = () => (
     </div>
     <div className="fields">
       <div className="field">
-        <div className="fiel">
-        <span>Email</span>
+        <div className="label">
+          <span>Email</span>
         </div>
-        <input type="text" name="" id="" placeholder="Email address" />
+        <div className="input">
+          <input type="text" name="" id="" placeholder="Email address" />
+        </div>
       </div>
       <div className="field">
-          <div className="fiel">
-            <span>Password</span>
-          </div>
-        <input type="password" name="" id="" placeholder="Password" />
+        <div className="label">
+          <span>Password</span>
+          <a href="./">Forgot password?</a>
+        </div>
+        <div className="input">
+          <input type="password" name="" id="" placeholder="Password" />
+          <VisibilityToggle className="inner-icon"></VisibilityToggle>
+        </div>
       </div>
     </div>
     <button>Log in</button>
