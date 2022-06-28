@@ -13,11 +13,15 @@ export const Login = () => (
     </div>
     <div className="fields">
       <div className="field">
+        <div className="fiel">
         <span>Email</span>
+        </div>
         <input type="text" name="" id="" placeholder="Email address" />
       </div>
       <div className="field">
-        <span>Password</span>
+          <div className="fiel">
+            <span>Password</span>
+          </div>
         <input type="password" name="" id="" placeholder="Password" />
       </div>
     </div>
