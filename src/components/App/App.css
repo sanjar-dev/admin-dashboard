@@ -2,10 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Mulish";
 }
 
 body {
-  background-color: #363740;
+  background-color: #f7f8fc;
 }
 
 .center {
