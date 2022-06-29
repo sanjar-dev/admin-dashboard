@@ -59,11 +59,11 @@ export const Layout = () => {
           </section>
           <section>
             <div className="layout-item">
-              <Agents className="layout-item-icon" />
+              <Settings className="layout-item-icon" />
               <p>Settings</p>
             </div>
             <div className="layout-item">
-              <Articles className="layout-item-icon" />
+              <Subscription className="layout-item-icon" />
               <p>Subscription</p>
             </div>
           </section>
