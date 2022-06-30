@@ -1,7 +1,7 @@
 import React from "react";
-import "./NotFound.css";
+import "./NoPage.css";
 
-export const NotFound = () => {
+export const NoPage = () => {
   return (
     <div className="not-found-wrapper">
       <h1>404</h1>

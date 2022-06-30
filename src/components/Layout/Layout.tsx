@@ -22,7 +22,11 @@ export const Layout = () => {
             <h1>Dashboard Kit</h1>
           </div>
           <section>
-            <div className="layout-item active">
+            <div className="layout-item">
+              <Overview className="layout-item-icon"></Overview>
+              <p>Todo List</p>
+            </div>
+            <div className="layout-item">
               <Overview className="layout-item-icon"></Overview>
               <p>Overview</p>
             </div>
