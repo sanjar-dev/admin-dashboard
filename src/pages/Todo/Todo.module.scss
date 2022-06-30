@@ -1,0 +1,67 @@
+.todo_wrapper {
+  padding: 32px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.todo_item_wrapper {
+  width: 100%;
+}
+
+.todo_item {
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  border: 1px solid #dfe0eb;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.todo_item i {
+  font-style: normal;
+}
+
+.todo_item input[type="checkbox"] {
+  margin-right: 12px;
+  border-radius: 50%;
+}
+
+.todo_form_wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.todo_form_wrapper input[type="text"] {
+  width: 100%;
+  font-size: 18px;
+  padding: 12px;
+  border: 1px solid #dfe0eb;
+  border-radius: 8px;
+  background-color: white;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.todo_form_wrapper button,
+.todo_clear {
+  padding: 18px;
+  font-size: 14px;
+  border: 1px solid #3751ff;
+  border-radius: 8px;
+  color: #3751ff;
+  background-color: white;
+  cursor: pointer;
+}
+
+.todo_clear {
+  margin-top: 16px;
+}
+
+.linethrough {
+  text-decoration: line-through;
+}

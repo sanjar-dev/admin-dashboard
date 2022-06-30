@@ -1,16 +1,15 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Login } from "../../pages/Login";
-import { NoPage } from "../../pages/NoPage";
-import { Layout } from "../../components/Layout";
+
+import { Login } from "../pages/Login";
+import { Layout } from "../pages/Layout";
+import { NoPage } from "../pages/NoPage";
+import { Todo } from "../pages/Todo";
+
 import "./App.css";
-import { Todo } from "../../pages/Todo/Todo";
 
 export const App = () => {
   return (
-    // <div className="app center">
-    //   <Login></Login>
-    // </div>
     <BrowserRouter>
       <Routes>
         <Route path="login" element={<Login />} />
