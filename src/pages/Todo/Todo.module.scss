@@ -15,6 +15,8 @@
   width: 100%;
   margin: 8px 0;
   padding: 12px;
+  display: flex;
+  align-items: center;
   border: 1px solid #dfe0eb;
   border-radius: 8px;
   background-color: white;
@@ -24,9 +26,47 @@
   font-style: normal;
 }
 
-.todo_item input[type="checkbox"] {
-  margin-right: 12px;
+.todo_checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 26px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.todo_checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.todo_checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
   border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.todo_checkbox:hover input[type="checkbox"] ~ .todo_checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.todo_checkbox input[type="checkbox"]:checked ~ .todo_checkmark {
+  background-color: #2196f3;
 }
 
 .todo_form_wrapper {

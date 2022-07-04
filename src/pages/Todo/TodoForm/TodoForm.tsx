@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
+import { addTodo } from "../TodoSlice";
 import { TodoFormProps } from "../../../common/types";
 import style from "../Todo.module.scss";
 
-export const TodoForm = ({ addTask }: TodoFormProps) => {
+export const TodoForm = ({ dispatch }: TodoFormProps) => {
   const [userInput, setUserInput] = useState("");
 
   const handleChange = (ev: React.FormEvent<HTMLInputElement>) => {
@@ -12,7 +13,7 @@ export const TodoForm = ({ addTask }: TodoFormProps) => {
 
   const handleSubmit = (ev: React.FormEvent<HTMLElement>) => {
     ev.preventDefault();
-    if (userInput !== "") addTask(userInput);
+    if (userInput !== "") dispatch(addTodo(userInput));
     setUserInput("");
   };
 

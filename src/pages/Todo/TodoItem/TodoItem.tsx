@@ -1,23 +1,23 @@
 import React from "react";
 
 import { TodoItemProps } from "../../../common/types";
+import { toggleTodo } from "../TodoSlice";
 import style from "../Todo.module.scss";
 
-export const TodoItem = ({ todo, handleToggle }: TodoItemProps) => {
+export const TodoItem = ({ todo, dispatch }: TodoItemProps) => {
   return (
     <div className={`${style.todo_item}`}>
-      <p>
+      <label className={style.todo_checkbox}>
         <input
           type="checkbox"
           name=""
           id=""
           checked={todo.complete}
-          onChange={() => handleToggle(todo.id)}
+          onChange={() => dispatch(toggleTodo(todo))}
         />
-        <i className={`${todo.complete ? style.linethrough : ""}`}>
-          {todo.task}
-        </i>
-      </p>
+        <span className={style.todo_checkmark}></span>
+      </label>
+      <i className={`${todo.complete ? style.linethrough : ""}`}>{todo.task}</i>
     </div>
   );
 };

@@ -1,3 +1,5 @@
+import { Dispatch } from "@reduxjs/toolkit";
+
 export interface TodoData {
   id: number;
   task: string;
@@ -6,9 +8,11 @@ export interface TodoData {
 
 export interface TodoItemProps {
   todo: TodoData;
-  handleToggle: Function;
+  // handleToggle: Function;
+  dispatch: Dispatch;
 }
 
 export interface TodoFormProps {
-  addTask: Function;
+  dispatch: Dispatch;
+  // addTask: Function;
 }
